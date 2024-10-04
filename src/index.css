@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Outfit', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+.app:before {
+  content: '';
+  background: url('https://i.redd.it/vxb6a6kge3h61.jpg') no-repeat center center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+}
+
+.app .search {
+  text-align: center;
+  padding: 0.5rem; /* Reduced padding */
+}
+
+.app input {
+  padding: 0.5rem 1rem; /* Reduced padding */
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.1);
+  color: #f8f8f8;
+}
+
+::placeholder {
+  color: #f8f8f8;
+}
+
+.weather-icon {
+  width: 60%;
+  height: auto;
+  max-width: 100px;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  text-align: center;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Changed to reduce space */
+}
+
+.app .top {
+  width: 100%;
+  margin: 0.5rem auto; /* Reduced margin */
+}
+
+.location p {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.app .description {
+  position: relative;
+  text-align: center;
+}
+
+.app .bottom {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 0.5rem auto; /* Reduced margin */
+  padding: 0.5rem; /* Reduced padding */
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.forecast {
+  margin: 0.5rem 0; /* Reduced margin */
+  text-align: center;
+  color: #fff;
+}
+
+.forecast h2 {
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem; /* Reduced margin */
+}
+
+.forecast-items {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 0.5rem; /* Reduced gap */
+}
+
+.forecast-item {
+  background: rgba(255, 255, 255, 0.2); 
+  border-radius: 12px; 
+  padding: 0.5rem; /* Reduced padding */
+  flex: 1 1 100px; 
+  max-width: 120px; 
+  text-align: center; 
+  transition: transform 0.3s; 
+}
+
+.forecast-item:hover {
+  transform: scale(1.05); 
+}
+
+.forecast-item .day {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.forecast-item .temp {
+  font-size: 1.4rem;
+}
